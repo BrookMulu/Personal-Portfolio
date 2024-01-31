@@ -30,7 +30,7 @@ const Email = () => {
         <motion.section initial = {{opacity: 0}} whileInView={{opacity:1}} transition={{duration:1}} className ="grid md:grid-cols-2 my-12 md:my-12  py-24 gap-4 relative" >
             <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-orange-600 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
             <div className="z-9">
-                <h5 className="text-xl font-bold text-white my-2.5">Let's Connect</h5>
+                <h5 className="text-xl font-bold text-white my-2.5">Lets Connect</h5>
                 <p className="text-[#ADB7BE] mb-4 max-w-md">
                     Feel free to reach out to me. I am always looking to explore new opportunities.
                     If you have any questions or just want to connect, I will do my bes to get back 
