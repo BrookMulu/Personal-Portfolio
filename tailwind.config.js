@@ -15,4 +15,13 @@ module.exports = {
     },
   },
   plugins: [],
+  theme: {
+    extend: {
+      backgroundColor: {
+        'orange-black-mix': 'linear-gradient(90deg, #FFA500, #000000)',
+      },
+    },
+  },
+  variants: {},
+  plugins: [],
 }
