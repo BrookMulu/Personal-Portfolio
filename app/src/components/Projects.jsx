@@ -9,8 +9,8 @@ const projects = [
     src: '/images/pokedex-screenshot.png',
     linkUrl: 'https://github.com/BrookMulu/frontend-pokedex',
     sourceLinks: [
-      { label: 'Frontend code', href: 'https://github.com/BrookMulu/frontend-pokedex' },
-      { label: 'Backend code', href: 'https://github.com/BrookMulu/Backend-Pokedex' },
+      { label: 'Frontend source', href: 'https://github.com/BrookMulu/frontend-pokedex' },
+      { label: 'Backend source', href: 'https://github.com/BrookMulu/Backend-Pokedex' },
     ],
   },
   {
@@ -20,6 +20,9 @@ const projects = [
     tags: ['Node.js', 'React', 'Next.js', 'Email.js', 'Chakra UI', 'TypeScript'],
     src: '/images/cssWebsiteImage.png',
     linkUrl: 'https://css-website-staging.vercel.app',
+    sourceLinks: [
+      { label: 'Source', href: 'https://github.com/BrookMulu/CSS_Website' },
+    ],
   },
   {
     title: 'Personal Portfolio',
@@ -28,6 +31,9 @@ const projects = [
     tags: ['Node.js', 'React', 'Next.js', 'Email.js', 'Tailwind CSS', 'Framer Motion', 'JavaScript'],
     src: '/images/portfolio-screenshot.png',
     linkUrl: '#home',
+    sourceLinks: [
+      { label: 'Source', href: 'https://github.com/BrookMulu/Personal-Portfolio' },
+    ],
   },
   {
     title: 'Chef’s Laundry',
@@ -36,6 +42,9 @@ const projects = [
     tags: ['Android Studio', 'Kotlin', 'XML', 'Android Emulator'],
     src: '/images/chefsLaundryImage.png',
     linkUrl: 'https://github.com/BrookMulu/Chef-s-Laundry-Mobile-App',
+    sourceLinks: [
+      { label: 'Source', href: 'https://github.com/BrookMulu/Chef-s-Laundry-Mobile-App' },
+    ],
   },
 ];
 
