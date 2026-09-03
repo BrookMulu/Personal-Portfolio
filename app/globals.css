@@ -91,6 +91,7 @@ h1 { font-size: clamp(2.75rem, 4.5vw, 4rem); letter-spacing: -.055em; line-heigh
 .project-arrow { position: absolute; right: 18px; top: 18px; width: 40px; height: 40px; background: var(--foreground); color: #111; border-radius: 50%; display: grid; place-items: center; font-size: 23px; }
 .project-info { padding: 22px 0 6px; }
 .project-source-links { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; }
+.project-source-links .text-link > svg { width: 16px; height: 16px; flex: 0 0 auto; }
 .projects-grid-balanced .project-card:first-child { grid-column: auto; }
 .projects-grid-balanced .project-card:first-child .project-visual { height: 280px; }
 .projects-grid-balanced .project-card:first-child .project-info { display: block; }
