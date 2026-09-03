@@ -1,139 +1,16 @@
-"use client"
-import React, { useRef } from "react";
-import { motion, useScroll } from "framer-motion";
-import LiIcon from "./LiIcon";
+const experience = [
+  { role: 'Application Developer Intern · Full Stack Development', company: 'Eide Bailly LLP', date: 'Jan 2024 — Aug 2024', location: 'Fargo, ND', description: 'Built an internal hardware-selection and IT-fulfillment application with Angular, TypeScript, C#/.NET, JWT authentication, and Microsoft SQL Server, improving process efficiency by 40%. Migrated legacy .NET 4 and .NET 6 applications to .NET 8, improving performance by 25%. Supported collaborative development and automated releases with Git, GitHub, CI/CD pipelines, and Microsoft Azure.' },
+  { role: 'Application Developer Co-op', company: 'Doosan Digital Innovation America, LLC', date: 'May 2023 — Dec 2023', location: 'West Fargo, ND', description: 'Developed application enhancements and integrations with Angular, TypeScript, C#/.NET, JWT authentication, and Oracle SQL, including real-time reporting and access controls. Configured, integrated, and optimized Apriso MES manufacturing workflows, contributing to a 40% improvement in process efficiency. Collaborated through GitHub, Jira, and Confluence within Agile and Secure SDLC processes.' },
+  { role: 'Project Manager', company: 'Computer Science Society, Concordia College', date: 'May 2023 — May 2024', location: 'Moorhead, MN', link: 'https://www.concordiacollege.edu/', description: 'Directed planning and development of the club website, using GitHub and Jira to organize the software development lifecycle. Collaborated with student leaders and faculty advisors to revitalize and relaunch the Computer Science Club.' },
+  { role: 'Student Manager', company: 'IT Solution Center, Concordia College', date: 'Jan 2023 — Dec 2023', location: 'Moorhead, MN', link: 'https://www.concordiacollege.edu/', description: 'Managed a team of 14 student employees, providing guidance, training, and support for daily operations. Helped enforce IT policies and procedures while fostering a safe and productive environment.' },
+  { role: 'Student Technician', company: 'IT Solution Center, Concordia College', date: 'May 2022 — Dec 2022', location: 'Moorhead, MN', link: 'https://www.concordiacollege.edu/', description: 'Troubleshot software and hardware issues, performed installations and minor repairs, and provided online and phone support to customers.' },
+  { role: 'Study Away Office Assistant', company: 'Concordia College', date: 'Sept 2021 — May 2022', location: 'Moorhead, MN', link: 'https://www.concordiacollege.edu/', description: 'Advised students interested in Study Away programs, supported paperwork, and answered questions by phone, email, and in person. Managed multiple projects using organizational and analytical skills.' },
+  { role: 'Bachelor of Arts in Computer Science', company: 'Concordia College', date: 'Graduated Spring 2024', location: 'Moorhead, MN', link: 'https://www.concordiacollege.edu/', description: 'Studied data structures and algorithms, web and mobile application development, operating systems, databases, computer networks, and software engineering. Activities included the Computer Science Society and ColorStack.' },
+];
 
-const Info = ({ position, company, companyLink, time, address, desc }) => {
-  const ref = useRef(null);
-
-  const fadeInAnimationVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.5,
-      },
-    },
-  };
-
-  return (
-    <motion.li
-      ref={ref}
-      variants={fadeInAnimationVariants}
-      initial="hidden"
-      animate="visible"
-      className="text-white my-8 first:mt-0 last:mb-0 w-full md:w-[60%] mx-auto flex flex-col items-center justify-between"
-    >
-      <div className="hidden md:block">
-        <LiIcon reference={ref} />
-      </div>
-      <div>
-        <h3 className="capitalize font-bold text-xl md:text-2xl lg:text-3xl">
-          {position}&nbsp;
-          <a
-            href={companyLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-orange-600 capitalize lg:text-xl"
-          >
-            @{company}
-          </a>
-        </h3>
-        <span className="capitalize font-medium text-white/75 lg:text-base">
-          {time} | {address}
-        </span>
-        <p className="font-medium w-full lg:text-base">
-          {desc}
-        </p>
-      </div>
-    </motion.li>
-  );
-};
-
-const Experience = () => {
-  const ref = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start end", "center start"],
-  });
-
-  return (
-    <div id="experience">
-      <div className=" pt-20">
-        <h2 className="font-bold text-6xl text-white mb-32 text-center">
-          Experience
-        </h2>
-        <div ref={ref} className="w-[75%] mx-auto relative">
-          <motion.div
-            style={{ scaleY: scrollYProgress }}
-            className="absolute -left-16 md:left-8 top-0 w-[2px] md:w-[4px] h-full bg-orange-600 origin-top"
-          />
-          <motion.ul className="w-full flex flex-col items-center justify-between">
-          <Info
-              position="Student, Bachelor of Arts in Computer Science"
-              company="Concordia College"
-              companyLink="https://www.concordiacollege.edu/"
-              time="Aug 2020 - Present"
-              address="Moorhead, MN"
-              desc="I am currently a student atteding Concordia College as a computer science major with a computing concentration.
-              At concordia I currently serve as member of board for the intramural soccer club student organization as well as project manger for 
-              the computer science society"
-            />
-          <Info
-              position="Study Away Office Assistant"
-              company="Concordia College"
-              companyLink="https://www.concordiacollege.edu/"
-              time="Sept 2021 - May 2022"
-              address="Moorhead, MN"
-              desc="Interacted with customers by phone, email, or in-person to provide information.
-              Managed multiple projects simultaneously using organizational and analytical skills.
-              Provided advising sessions including paperwork for students interested in going on Study Away programs."
-            />
-            <Info
-              position="Student Technician"
-              company="Information Technology Solution Center, Concordia College"
-              companyLink="https://www.concordiacollege.edu/"
-              time="May 2022-Present"
-              address="Moorhead, MN"
-              desc="Showed good problem-solving skills for troubleshooting related problems.
-              Ability to install and repair minor software and hardware problems.
-              Giving online and on phone support to customers providing great customer service skills"
-            />
-            <Info
-              position="Student Manager"
-              company="Information Technology Solution Center, Concordia College"
-              companyLink="https://www.concordiacollege.edu/"
-              time="Jan 2023-Present"
-              address="Moorhead, MN"
-              desc="Managing a team of 14 student employees, providing guidance, training, and support to ensure efficient daily operations.
-              Assisted in the enforcement of IT policies and procedures, ensuring compliance with college guidelines and standards while encouraging a safe and productive environment."
-            />
-            <Info
-              position="Project Manager"
-              company="Computer Science Society, Concordia College"
-              companyLink="https://www.concordiacollege.edu/"
-              time="May 2023-Present"
-              address="Moorhead, MN"
-              desc="Directed the proficient planning and execution of the club website. Employing developer tools, including GitHub and Jira, to orchestrate a structured software development lifecycle for efficient
-              project management and successful outcomes.Played a pivotal role in revitalizing and relaunching the Computer Science Club by collaborating with fellow members of
-              leadership and faculty advisors."
-            />
-            <Info
-              position="Application Developer Co-op(intern)"
-              company="Doosan Bobcat"
-              companyLink="www.google.com"
-              time="May 2023-Dec 2024"
-              address="West Fargo, ND"
-              desc="Using Angular for the front-end, C# .NET for the back end, REST and Web APIs for data integration and Oracle SQL for data retrievals and optimization, delivering real-time data visualizations, access control mechanisms, performance enhancements. Utilizing Apriso MES to optimize manufacturing processes, including configuration, integration, automation, and performance enhancements."
-            />
-          </motion.ul>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default Experience;
-
-
+export default function Experience() {
+  return <section id="experience" className="section" aria-labelledby="experience-title">
+    <div className="section-heading"><div><span className="eyebrow section-kicker">03 / ALONG THE WAY</span><h2 id="experience-title">Experience that shapes my work<span className="accent">.</span></h2></div></div>
+    <ol className="experience-list">{experience.map(item => <li className="experience-row" key={item.role}><div className="experience-date">{item.date}<span>{item.location}</span></div><div><h3>{item.role}</h3>{item.link ? <a className="experience-company" href={item.link} target="_blank" rel="noreferrer">{item.company} ↗</a> : <span className="experience-company">{item.company}</span>}<p>{item.description}</p></div></li>)}</ol>
+  </section>;
+}

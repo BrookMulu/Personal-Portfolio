@@ -2,7 +2,6 @@
 //import Image from 'next/image'
 import HeaderSection from './src/components/HeaderSection'
 import NavBar from './src/components/NavBar'
-import { Container } from 'postcss'
 import Skills from './src/components/Skills'
 import Expierence from './src/components/Expierence'
 import Email from './src/components/Email'
@@ -12,10 +11,10 @@ import Projects from './src/components/Projects'
 export default function Home() {
   return (
     <>
-    <main className="flex min-h-screen flex-col bg-black">
-      <div className="m-2">
+    <main id="home">
+      <a className="skip-link" href="#main-content">Skip to content</a>
         <NavBar/>
-        <div className = "container mt-24 mx-auto mb-14 px-12 py-4">
+        <div className="site-container" id="main-content">
           <HeaderSection/>
           <Projects/>
           <Skills/>
@@ -23,7 +22,6 @@ export default function Home() {
           <Email/>
         </div>
         <Footer/>
-      </div>
     </main>
     </>
   )

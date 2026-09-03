@@ -1,0 +1,256 @@
+{
+  "repository": "https://github.com/devicons/devicon",
+  "commit": "7330accdbc47e2dc0c19789a48533c4a3c50fe58",
+  "license": {
+    "filename": "LICENSE",
+    "source": "https://github.com/devicons/devicon/blob/7330accdbc47e2dc0c19789a48533c4a3c50fe58/LICENSE",
+    "download": "https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/LICENSE"
+  },
+  "assets": [
+    {
+      "name": "html5",
+      "filename": "html5.svg",
+      "upstreamPath": "icons/html5/html5-original.svg",
+      "source": "https://github.com/devicons/devicon/blob/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/html5/html5-original.svg",
+      "download": "https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/html5/html5-original.svg"
+    },
+    {
+      "name": "css3",
+      "filename": "css3.svg",
+      "upstreamPath": "icons/css3/css3-original.svg",
+      "source": "https://github.com/devicons/devicon/blob/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/css3/css3-original.svg",
+      "download": "https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/css3/css3-original.svg"
+    },
+    {
+      "name": "react",
+      "filename": "react.svg",
+      "upstreamPath": "icons/react/react-original.svg",
+      "source": "https://github.com/devicons/devicon/blob/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/react/react-original.svg",
+      "download": "https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/react/react-original.svg"
+    },
+    {
+      "name": "nextjs",
+      "filename": "nextjs.svg",
+      "upstreamPath": "icons/nextjs/nextjs-original.svg",
+      "source": "https://github.com/devicons/devicon/blob/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/nextjs/nextjs-original.svg",
+      "download": "https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/nextjs/nextjs-original.svg"
+    },
+    {
+      "name": "angular",
+      "filename": "angular.svg",
+      "upstreamPath": "icons/angular/angular-original.svg",
+      "source": "https://github.com/devicons/devicon/blob/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/angular/angular-original.svg",
+      "download": "https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/angular/angular-original.svg"
+    },
+    {
+      "name": "tailwindcss",
+      "filename": "tailwindcss.svg",
+      "upstreamPath": "icons/tailwindcss/tailwindcss-original.svg",
+      "source": "https://github.com/devicons/devicon/blob/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/tailwindcss/tailwindcss-original.svg",
+      "download": "https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/tailwindcss/tailwindcss-original.svg"
+    },
+    {
+      "name": "materialui",
+      "filename": "materialui.svg",
+      "upstreamPath": "icons/materialui/materialui-original.svg",
+      "source": "https://github.com/devicons/devicon/blob/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/materialui/materialui-original.svg",
+      "download": "https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/materialui/materialui-original.svg"
+    },
+    {
+      "name": "javascript",
+      "filename": "javascript.svg",
+      "upstreamPath": "icons/javascript/javascript-original.svg",
+      "source": "https://github.com/devicons/devicon/blob/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/javascript/javascript-original.svg",
+      "download": "https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/javascript/javascript-original.svg"
+    },
+    {
+      "name": "typescript",
+      "filename": "typescript.svg",
+      "upstreamPath": "icons/typescript/typescript-original.svg",
+      "source": "https://github.com/devicons/devicon/blob/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/typescript/typescript-original.svg",
+      "download": "https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/typescript/typescript-original.svg"
+    },
+    {
+      "name": "csharp",
+      "filename": "csharp.svg",
+      "upstreamPath": "icons/csharp/csharp-original.svg",
+      "source": "https://github.com/devicons/devicon/blob/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/csharp/csharp-original.svg",
+      "download": "https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/csharp/csharp-original.svg"
+    },
+    {
+      "name": "java",
+      "filename": "java.svg",
+      "upstreamPath": "icons/java/java-original.svg",
+      "source": "https://github.com/devicons/devicon/blob/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/java/java-original.svg",
+      "download": "https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/java/java-original.svg"
+    },
+    {
+      "name": "kotlin",
+      "filename": "kotlin.svg",
+      "upstreamPath": "icons/kotlin/kotlin-original.svg",
+      "source": "https://github.com/devicons/devicon/blob/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/kotlin/kotlin-original.svg",
+      "download": "https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/kotlin/kotlin-original.svg"
+    },
+    {
+      "name": "python",
+      "filename": "python.svg",
+      "upstreamPath": "icons/python/python-original.svg",
+      "source": "https://github.com/devicons/devicon/blob/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/python/python-original.svg",
+      "download": "https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/python/python-original.svg"
+    },
+    {
+      "name": "cplusplus",
+      "filename": "cplusplus.svg",
+      "upstreamPath": "icons/cplusplus/cplusplus-original.svg",
+      "source": "https://github.com/devicons/devicon/blob/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/cplusplus/cplusplus-original.svg",
+      "download": "https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/cplusplus/cplusplus-original.svg"
+    },
+    {
+      "name": "c",
+      "filename": "c.svg",
+      "upstreamPath": "icons/c/c-original.svg",
+      "source": "https://github.com/devicons/devicon/blob/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/c/c-original.svg",
+      "download": "https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/c/c-original.svg"
+    },
+    {
+      "name": "r",
+      "filename": "r.svg",
+      "upstreamPath": "icons/r/r-original.svg",
+      "source": "https://github.com/devicons/devicon/blob/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/r/r-original.svg",
+      "download": "https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/r/r-original.svg"
+    },
+    {
+      "name": "php",
+      "filename": "php.svg",
+      "upstreamPath": "icons/php/php-original.svg",
+      "source": "https://github.com/devicons/devicon/blob/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/php/php-original.svg",
+      "download": "https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/php/php-original.svg"
+    },
+    {
+      "name": "scala",
+      "filename": "scala.svg",
+      "upstreamPath": "icons/scala/scala-original.svg",
+      "source": "https://github.com/devicons/devicon/blob/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/scala/scala-original.svg",
+      "download": "https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/scala/scala-original.svg"
+    },
+    {
+      "name": "nodejs",
+      "filename": "nodejs.svg",
+      "upstreamPath": "icons/nodejs/nodejs-original.svg",
+      "source": "https://github.com/devicons/devicon/blob/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/nodejs/nodejs-original.svg",
+      "download": "https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/nodejs/nodejs-original.svg"
+    },
+    {
+      "name": "dotnetcore",
+      "filename": "dotnetcore.svg",
+      "upstreamPath": "icons/dotnetcore/dotnetcore-original.svg",
+      "source": "https://github.com/devicons/devicon/blob/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/dotnetcore/dotnetcore-original.svg",
+      "download": "https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/dotnetcore/dotnetcore-original.svg"
+    },
+    {
+      "name": "spring",
+      "filename": "spring.svg",
+      "upstreamPath": "icons/spring/spring-original.svg",
+      "source": "https://github.com/devicons/devicon/blob/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/spring/spring-original.svg",
+      "download": "https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/spring/spring-original.svg"
+    },
+    {
+      "name": "postgresql",
+      "filename": "postgresql.svg",
+      "upstreamPath": "icons/postgresql/postgresql-original.svg",
+      "source": "https://github.com/devicons/devicon/blob/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/postgresql/postgresql-original.svg",
+      "download": "https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/postgresql/postgresql-original.svg"
+    },
+    {
+      "name": "microsoftsqlserver",
+      "filename": "microsoftsqlserver.svg",
+      "upstreamPath": "icons/microsoftsqlserver/microsoftsqlserver-original.svg",
+      "source": "https://github.com/devicons/devicon/blob/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/microsoftsqlserver/microsoftsqlserver-original.svg",
+      "download": "https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/microsoftsqlserver/microsoftsqlserver-original.svg"
+    },
+    {
+      "name": "oracle",
+      "filename": "oracle.svg",
+      "upstreamPath": "icons/oracle/oracle-original.svg",
+      "source": "https://github.com/devicons/devicon/blob/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/oracle/oracle-original.svg",
+      "download": "https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/oracle/oracle-original.svg"
+    },
+    {
+      "name": "mongodb",
+      "filename": "mongodb.svg",
+      "upstreamPath": "icons/mongodb/mongodb-original.svg",
+      "source": "https://github.com/devicons/devicon/blob/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/mongodb/mongodb-original.svg",
+      "download": "https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/mongodb/mongodb-original.svg"
+    },
+    {
+      "name": "docker",
+      "filename": "docker.svg",
+      "upstreamPath": "icons/docker/docker-original.svg",
+      "source": "https://github.com/devicons/devicon/blob/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/docker/docker-original.svg",
+      "download": "https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/docker/docker-original.svg"
+    },
+    {
+      "name": "kubernetes",
+      "filename": "kubernetes.svg",
+      "upstreamPath": "icons/kubernetes/kubernetes-original.svg",
+      "source": "https://github.com/devicons/devicon/blob/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/kubernetes/kubernetes-original.svg",
+      "download": "https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/kubernetes/kubernetes-original.svg"
+    },
+    {
+      "name": "azure",
+      "filename": "azure.svg",
+      "upstreamPath": "icons/azure/azure-original.svg",
+      "source": "https://github.com/devicons/devicon/blob/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/azure/azure-original.svg",
+      "download": "https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/azure/azure-original.svg"
+    },
+    {
+      "name": "linux",
+      "filename": "linux.svg",
+      "upstreamPath": "icons/linux/linux-original.svg",
+      "source": "https://github.com/devicons/devicon/blob/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/linux/linux-original.svg",
+      "download": "https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/linux/linux-original.svg"
+    },
+    {
+      "name": "github",
+      "filename": "github.svg",
+      "upstreamPath": "icons/github/github-original.svg",
+      "source": "https://github.com/devicons/devicon/blob/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/github/github-original.svg",
+      "download": "https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/github/github-original.svg"
+    },
+    {
+      "name": "gitlab",
+      "filename": "gitlab.svg",
+      "upstreamPath": "icons/gitlab/gitlab-original.svg",
+      "source": "https://github.com/devicons/devicon/blob/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/gitlab/gitlab-original.svg",
+      "download": "https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/gitlab/gitlab-original.svg"
+    },
+    {
+      "name": "jira",
+      "filename": "jira.svg",
+      "upstreamPath": "icons/jira/jira-original.svg",
+      "source": "https://github.com/devicons/devicon/blob/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/jira/jira-original.svg",
+      "download": "https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/jira/jira-original.svg"
+    },
+    {
+      "name": "vscode",
+      "filename": "vscode.svg",
+      "upstreamPath": "icons/vscode/vscode-original.svg",
+      "source": "https://github.com/devicons/devicon/blob/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/vscode/vscode-original.svg",
+      "download": "https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/vscode/vscode-original.svg"
+    },
+    {
+      "name": "visualstudio",
+      "filename": "visualstudio.svg",
+      "upstreamPath": "icons/visualstudio/visualstudio-original.svg",
+      "source": "https://github.com/devicons/devicon/blob/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/visualstudio/visualstudio-original.svg",
+      "download": "https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/visualstudio/visualstudio-original.svg"
+    },
+    {
+      "name": "androidstudio",
+      "filename": "androidstudio.svg",
+      "upstreamPath": "icons/androidstudio/androidstudio-original.svg",
+      "source": "https://github.com/devicons/devicon/blob/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/androidstudio/androidstudio-original.svg",
+      "download": "https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/androidstudio/androidstudio-original.svg"
+    }
+  ]
+}
