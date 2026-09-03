@@ -53,6 +53,8 @@ h1 { font-size: clamp(2.75rem, 4.5vw, 4rem); letter-spacing: -.055em; line-heigh
 .text-link { display: inline-flex; align-items: center; gap: 12px; font-size: 14px; }
 .text-link:hover { color: var(--accent); }
 .hero-socials { display: flex; gap: 22px; flex-wrap: wrap; margin-top: 40px; font-size: 12px; }
+.hero-socials a { display: inline-flex; align-items: center; gap: 7px; }
+.hero-socials a svg { width: 17px; height: 17px; flex: 0 0 auto; }
 .hero-socials a:hover { color: var(--accent); }
 .hero-socials > span { color: var(--muted); border-left: 1px solid var(--line); padding-left: 22px; }
 .portrait-card { position: relative; margin: 0; border: 1px solid #494b40; border-radius: 10px; overflow: hidden; transform: rotate(2deg); background: #c1c3b5; }
@@ -118,10 +120,20 @@ h1 { font-size: clamp(2.75rem, 4.5vw, 4rem); letter-spacing: -.055em; line-heigh
 .experience-company:hover { text-decoration: underline; }
 .experience-row p { color: var(--muted); line-height: 1.85; font-size: 16px; }
 .contact-section { display: grid; grid-template-columns: 1fr 1fr; gap: 85px; border: 1px solid var(--line); background: var(--surface); border-radius: 10px; padding: 50px; margin: 100px 0 80px; }
+.contact-copy { display: flex; flex-direction: column; }
 .contact-copy h2 { margin: 18px 0 24px; }
 .contact-copy > p { color: var(--muted); font-size: 16px; line-height: 1.85; max-width: 350px; }
-.contact-socials { display: flex; gap: 24px; margin-top: 32px; font-size: 14px; }
-.contact-socials a:hover { color: var(--accent); }
+.contact-links { display: grid; grid-template-columns: 1fr 1fr; margin-top: 34px; }
+.contact-links a { display: flex; align-items: center; gap: 11px; min-width: 0; padding: 13px 20px; }
+.contact-links a:nth-child(odd) { padding-left: 0; border-right: 1px solid var(--line); }
+.contact-links a:nth-child(even) { padding-right: 0; }
+.contact-links a:nth-child(-n + 2) { border-bottom: 1px solid var(--line); }
+.contact-links svg { width: 18px; height: 18px; color: var(--accent); flex: 0 0 auto; transition: transform .2s ease, color .2s ease; }
+.contact-links span { min-width: 0; font-size: 12px; }
+.contact-links small { display: block; overflow: hidden; margin-top: 3px; color: var(--muted); font-size: 10px; text-overflow: ellipsis; white-space: nowrap; }
+.contact-links a:hover { color: var(--accent); }
+.contact-links a:hover svg { color: #ffa36f; transform: scale(1.12) rotate(-6deg); }
+.contact-links a:hover small { color: var(--foreground); }
 .contact-form { display: flex; flex-direction: column; gap: 20px; }
 .form-field label { display: block; margin-bottom: 9px; font-size: 14px; }
 .form-field input, .form-field textarea { background: #111210; color: var(--foreground); width: 100%; border: 1px solid #44463e; border-radius: 5px; padding: 13px 15px; font-size: 16px; }
@@ -176,6 +188,7 @@ h1 { font-size: clamp(2.75rem, 4.5vw, 4rem); letter-spacing: -.055em; line-heigh
   .experience-row { grid-template-columns: 1fr; gap: 12px; padding: 25px 0; }
   .experience-date span { display: inline; margin-left: 10px; }
   .contact-section { grid-template-columns: 1fr; gap: 35px; padding: 25px; margin: 64px 0 45px; }
+  .contact-links { max-width: 440px; }
   .footer-inner { flex-wrap: wrap; padding-block: 24px; }
   .footer-inner p { order: 3; width: 100%; }
 }
@@ -204,7 +217,7 @@ h1 { font-size: clamp(2.75rem, 4.5vw, 4rem); letter-spacing: -.055em; line-heigh
   .experience-row:hover { background: #ff8b4d06; border-bottom-color: #ff8b4d55; }
   .nav-resume:hover, .project-source-links .text-link:hover { border-color: var(--accent); background: #ff8b4d12; transform: translateY(-2px); }
   .text-link:hover svg, .text-link:hover > span, .button:not(:disabled):hover svg { transform: translate(2px, -2px); }
-  .hero-socials a:hover, .contact-socials a:hover { transform: translateY(-2px); }
+  .hero-socials a:hover { transform: translateY(-2px); }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -214,7 +227,7 @@ h1 { font-size: clamp(2.75rem, 4.5vw, 4rem); letter-spacing: -.055em; line-heigh
   .project-card:hover .project-arrow, .project-visual:hover img,
   .nav-resume:hover, .project-source-links .text-link:hover,
   .text-link:hover svg, .text-link:hover > span, .button:not(:disabled):hover,
-  .button:not(:disabled):hover svg, .hero-socials a:hover, .contact-socials a:hover { transform: none; }
+  .button:not(:disabled):hover svg, .hero-socials a:hover, .contact-links a:hover, .contact-links a:hover svg { transform: none; }
   .portrait-card:hover { transform: rotate(2deg); }
   .project-visual:hover .project-screenshot, .project-visual:focus-visible .project-screenshot { transform: rotate(-3deg); }
   .resume-drawer { animation: none; }
