@@ -35,7 +35,7 @@ export default function NavBar() {
   }
 
   return <>
-    <motion.nav className="site-nav" aria-label="Main navigation" initial={{ opacity: 0, y: reduceMotion ? 0 : 22 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: reduceMotion ? 0 : .85, delay: reduceMotion ? 0 : .16, ease: [0.22, 1, 0.36, 1] }}><div className="nav-inner">
+    <motion.nav className="site-nav" aria-label="Main navigation" initial={{ opacity: 0, y: reduceMotion ? 0 : 22 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: reduceMotion ? 0 : 1.5, delay: reduceMotion ? 0 : .25, ease: [0.22, 1, 0.36, 1] }}><div className="nav-inner">
       <a className="wordmark" href="#home" aria-label="Brook, home" onClick={() => setOpen(false)}>Brook<span>.</span></a>
       <button className="menu-toggle" aria-expanded={open} aria-controls="navigation-links" onClick={() => setOpen(!open)}>{open ? 'Close −' : 'Menu +'}</button>
       <div id="navigation-links" className={`nav-links ${open ? 'is-open' : ''}`}>

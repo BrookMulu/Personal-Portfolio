@@ -12,18 +12,18 @@ export default function HeaderSection() {
   const reduceMotion = useReducedMotion();
   const container = {
     hidden: {},
-    visible: { transition: { delayChildren: .16, staggerChildren: 0 } },
+    visible: { transition: { delayChildren: .25, staggerChildren: 0 } },
   };
   const item = {
     hidden: { opacity: 0, y: reduceMotion ? 0 : 22 },
-    visible: { opacity: 1, y: 0, transition: { duration: reduceMotion ? 0 : .85, ease: [0.22, 1, 0.36, 1] } },
+    visible: { opacity: 1, y: 0, transition: { duration: reduceMotion ? 0 : 1.5, ease: [0.22, 1, 0.36, 1] } },
   };
   const capabilitiesContainer = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
-        duration: reduceMotion ? 0 : .8,
+        duration: reduceMotion ? 0 : 1.35,
         staggerChildren: 0,
       },
     },
