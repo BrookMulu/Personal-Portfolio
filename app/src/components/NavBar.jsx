@@ -1,10 +1,12 @@
 "use client";
 import { useEffect, useRef, useState } from 'react';
+import { motion, useReducedMotion } from 'framer-motion';
 const links = [['Projects', '#projects'], ['Skills', '#skills'], ['Experience', '#experience'], ['Contact', '#contact']];
 export default function NavBar() {
   const [open, setOpen] = useState(false);
   const [resumeOpen, setResumeOpen] = useState(false);
   const resumeButton = useRef(null);
+  const reduceMotion = useReducedMotion();
 
   useEffect(() => {
     if (!resumeOpen) return;
@@ -33,14 +35,14 @@ export default function NavBar() {
   }
 
   return <>
-    <nav className="site-nav" aria-label="Main navigation"><div className="nav-inner">
+    <motion.nav className="site-nav" aria-label="Main navigation" initial={{ opacity: 0, y: reduceMotion ? 0 : 22 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: reduceMotion ? 0 : .55, delay: reduceMotion ? 0 : .12, ease: [0.22, 1, 0.36, 1] }}><div className="nav-inner">
       <a className="wordmark" href="#home" aria-label="Brook, home" onClick={() => setOpen(false)}>Brook<span>.</span></a>
       <button className="menu-toggle" aria-expanded={open} aria-controls="navigation-links" onClick={() => setOpen(!open)}>{open ? 'Close −' : 'Menu +'}</button>
       <div id="navigation-links" className={`nav-links ${open ? 'is-open' : ''}`}>
         {links.map(([label, href]) => <a key={href} href={href} onClick={() => setOpen(false)}>{label}</a>)}
         <button ref={resumeButton} className="nav-resume" type="button" aria-haspopup="dialog" aria-expanded={resumeOpen} onClick={showResume}>Resume <span aria-hidden="true">↗</span></button>
       </div>
-    </div></nav>
+    </div></motion.nav>
     {resumeOpen && <div className="resume-layer">
       <button className="resume-backdrop" type="button" aria-label="Close resume preview" onClick={hideResume} />
       <aside className="resume-drawer" role="dialog" aria-modal="true" aria-labelledby="resume-title">

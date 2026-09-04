@@ -74,6 +74,15 @@ h1 { font-size: clamp(2.75rem, 4.5vw, 4rem); letter-spacing: -.055em; line-heigh
 .capability h2 { font-size: 19px; font-weight: 500; margin: 20px 0 10px; }
 .capability p { font-size: 16px; color: var(--muted); line-height: 1.8; max-width: 310px; }
 .section { padding-top: 100px; }
+.scroll-reveal .section-heading {
+  transform: translateY(52px) scale(.94);
+  transform-origin: left bottom;
+  transition: transform .72s cubic-bezier(.22, 1.75, .36, 1);
+}
+.scroll-reveal.is-visible .section-heading {
+  transform: translateY(0) scale(1);
+}
+.scroll-reveal.is-visible .section-heading { transition-delay: .04s; }
 .section-heading { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 36px; }
 .section-kicker { display: block; color: var(--accent); margin-bottom: 12px; }
 .section-heading h2, .contact-copy h2 { font-size: clamp(2rem, 3.7vw, 3.25rem); font-weight: 500; letter-spacing: -.045em; line-height: 1.15; }
@@ -232,4 +241,8 @@ h1 { font-size: clamp(2.75rem, 4.5vw, 4rem); letter-spacing: -.055em; line-heigh
   .portrait-card:hover { transform: rotate(2deg); }
   .project-visual:hover .project-screenshot, .project-visual:focus-visible .project-screenshot { transform: rotate(-3deg); }
   .resume-drawer { animation: none; }
+  .scroll-reveal .section-heading, .scroll-reveal .projects-grid > .project-card,
+  .scroll-reveal .skills-layout, .scroll-reveal .skill-groups > .skill-group,
+  .scroll-reveal .experience-list > .experience-row, .scroll-reveal .contact-copy,
+  .scroll-reveal .contact-form, .scroll-reveal .contact-links { opacity: 1; filter: none; transform: none; }
 }

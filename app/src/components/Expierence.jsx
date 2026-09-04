@@ -1,3 +1,6 @@
+"use client";
+import { motion, useReducedMotion } from 'framer-motion';
+
 const experience = [
   { role: 'Application Developer Intern · Full Stack Development', company: 'Eide Bailly LLP', date: 'Jan 2024 — Aug 2024', location: 'Fargo, ND', description: 'Built an internal hardware-selection and IT-fulfillment application with Angular, TypeScript, C#/.NET, JWT authentication, and Microsoft SQL Server, improving process efficiency by 40%. Migrated legacy .NET 4 and .NET 6 applications to .NET 8, improving performance by 25%. Supported collaborative development and automated releases with Git, GitHub, CI/CD pipelines, and Microsoft Azure.' },
   { role: 'Application Developer Co-op', company: 'Doosan Digital Innovation America, LLC', date: 'May 2023 — Dec 2023', location: 'West Fargo, ND', description: 'Developed application enhancements and integrations with Angular, TypeScript, C#/.NET, JWT authentication, and Oracle SQL, including real-time reporting and access controls. Configured, integrated, and optimized Apriso MES manufacturing workflows, contributing to a 40% improvement in process efficiency. Collaborated through GitHub, Jira, and Confluence within Agile and Secure SDLC processes.' },
@@ -9,8 +12,10 @@ const experience = [
 ];
 
 export default function Experience() {
+  const reduceMotion = useReducedMotion();
+  const pop = { initial: { y: reduceMotion ? 0 : 52, scale: reduceMotion ? 1 : .99 }, whileInView: { y: 0, scale: 1 }, viewport: { once: true, amount: .18 }, transition: { type: 'spring', stiffness: 260, damping: 13 } };
   return <section id="experience" className="section" aria-labelledby="experience-title">
     <div className="section-heading"><div><span className="eyebrow section-kicker">03 / ALONG THE WAY</span><h2 id="experience-title">Experience that shapes my work<span className="accent">.</span></h2></div></div>
-    <ol className="experience-list">{experience.map(item => <li className="experience-row" key={item.role}><div className="experience-date">{item.date}<span>{item.location}</span></div><div><h3>{item.role}</h3>{item.link ? <a className="experience-company" href={item.link} target="_blank" rel="noreferrer">{item.company} ↗</a> : <span className="experience-company">{item.company}</span>}<p>{item.description}</p></div></li>)}</ol>
+    <ol className="experience-list">{experience.map(item => <motion.li className="experience-row" key={item.role} {...pop}><div className="experience-date">{item.date}<span>{item.location}</span></div><div><h3>{item.role}</h3>{item.link ? <a className="experience-company" href={item.link} target="_blank" rel="noreferrer">{item.company} ↗</a> : <span className="experience-company">{item.company}</span>}<p>{item.description}</p></div></motion.li>)}</ol>
   </section>;
 }

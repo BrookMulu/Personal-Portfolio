@@ -7,6 +7,7 @@ import Expierence from './src/components/Expierence'
 import Email from './src/components/Email'
 import Footer from './src/components/Footer'
 import Projects from './src/components/Projects'
+import ScrollReveal from './src/components/ScrollReveal'
 
 export default function Home() {
   return (
@@ -16,10 +17,10 @@ export default function Home() {
         <NavBar/>
         <div className="site-container" id="main-content">
           <HeaderSection/>
-          <Projects/>
-          <Skills/>
-          <Expierence/>
-          <Email/>
+          <ScrollReveal><Projects/></ScrollReveal>
+          <ScrollReveal><Skills/></ScrollReveal>
+          <ScrollReveal><Expierence/></ScrollReveal>
+          <ScrollReveal><Email/></ScrollReveal>
         </div>
         <Footer/>
     </main>
