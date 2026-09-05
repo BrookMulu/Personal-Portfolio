@@ -28,6 +28,10 @@ export default function HeaderSection() {
       },
     },
   };
+  const portraitItem = {
+    hidden: { ...item.hidden, rotate: 2 },
+    visible: { ...item.visible, rotate: 2 },
+  };
 
   return <motion.header className="hero" variants={container} initial="hidden" animate="visible">
     <div className="hero-grid">
@@ -38,7 +42,7 @@ export default function HeaderSection() {
         <motion.div className="hero-actions" variants={item}><a className="button button-primary" href="#projects">Explore my work <ArrowDownIcon /></a><a className="text-link" href="#contact">Let’s connect <ArrowUpRightIcon /></a></motion.div>
         <motion.div className="hero-socials" variants={item}><a href="https://github.com/BrookMulu" target="_blank" rel="noreferrer"><GitHubIcon />GitHub ↗</a><a href="https://linkedin.com/in/brook-gebreeyesus" target="_blank" rel="noreferrer"><LinkedInIcon />LinkedIn ↗</a><span>Always learning. Always building.</span></motion.div>
       </div>
-      <motion.figure className="portrait-card" variants={item}>
+      <motion.figure className="portrait-card" variants={portraitItem} whileHover={reduceMotion ? {} : { rotate: 0, y: -3, boxShadow: '0 14px 35px #00000040' }}>
         <div className="portrait-image"><Image src="/images/brook_upper.jpeg" alt="Brook Gebreeyesus smiling" fill priority sizes="(max-width: 700px) 90vw, 38vw" /></div>
         <div className="portrait-caption"><div><span className="eyebrow">THE PERSON BEHIND THE CODE</span><p>Brook Gebreeyesus</p></div><span className="portrait-symbol" aria-hidden="true">✳</span></div>
       </motion.figure>
