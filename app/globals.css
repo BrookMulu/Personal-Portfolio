@@ -92,11 +92,12 @@ h1 { font-size: clamp(2.75rem, 4.5vw, 4rem); letter-spacing: -.055em; line-heigh
 .project-card:first-child { grid-column: 1 / -1; }
 .project-visual { display: block; position: relative; overflow: hidden; border: 1px solid var(--line); border-radius: 8px; background: #262d2b; height: 280px; }
 .project-card:first-child .project-visual { height: 430px; background: #2d3633; }
-.project-screenshot { position: absolute; left: 12%; top: 38px; width: 100%; aspect-ratio: 16 / 10; border: 1px solid #ffffff20; border-radius: 9px; overflow: hidden; box-shadow: -12px -6px 35px #00000025; transform: rotate(-3deg); transform-origin: top left; transition: transform .4s ease; }
+.project-screenshot { position: absolute; left: 12%; top: 38px; width: 92%; aspect-ratio: 16 / 10; border: 1px solid #ffffff20; border-radius: 9px; overflow: hidden; box-shadow: -12px -6px 35px #00000025; transform: translateY(24px) rotate(-3deg); transform-origin: top left; transition: transform .4s ease; }
 .project-visual .project-screenshot img { object-fit: cover; object-position: top left; padding: 0; }
-.project-visual:focus-visible .project-screenshot { transform: translate(-3%, -6px) rotate(-1deg); }
+.project-visual:focus-visible .project-screenshot { transform: translate(-3%, 18px) rotate(0deg); }
 .project-card:nth-child(2) .project-visual { background: #2f2823; }
 .project-card:nth-child(3) .project-visual { background: #2b2934; }
+.project-visual--financial { background: #242238 !important; }
 .project-arrow { position: absolute; right: 18px; top: 18px; width: 40px; height: 40px; background: var(--foreground); color: #111; border-radius: 50%; display: grid; place-items: center; font-size: 23px; }
 .project-info { padding: 22px 0 6px; }
 .project-source-links { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; }
@@ -189,7 +190,7 @@ h1 { font-size: clamp(2.75rem, 4.5vw, 4rem); letter-spacing: -.055em; line-heigh
   .project-card:first-child { grid-column: auto; }
   .project-visual, .project-card:first-child .project-visual { height: 260px; }
   .projects-grid-balanced .project-card:first-child .project-visual { height: 260px; }
-  .project-screenshot { left: 8%; top: 36px; width: 112%; }
+  .project-screenshot { left: 8%; top: 36px; width: 102%; }
   .project-info h3 { font-size: 21px; }
   .skills-layout { grid-template-columns: 1fr; gap: 28px; }
   .skill-group { grid-template-columns: 1fr; gap: 14px; }
@@ -223,7 +224,7 @@ h1 { font-size: clamp(2.75rem, 4.5vw, 4rem); letter-spacing: -.055em; line-heigh
   .portrait-card:hover { transform: rotate(0deg) translateY(-3px); box-shadow: 0 14px 35px #00000040; }
   .project-card:hover .project-visual { transform: translateY(-4px); border-color: #ff8b4d88; box-shadow: 0 12px 30px #00000035; }
   .project-card:hover .project-arrow { transform: rotate(45deg); background: var(--accent); }
-  .project-visual:hover .project-screenshot { transform: translate(-3%, -6px) rotate(-1deg); }
+  .project-visual:hover .project-screenshot { transform: translate(-3%, 18px) rotate(0deg); }
   .experience-row:hover { background: #ff8b4d06; border-bottom-color: #ff8b4d55; }
   .nav-resume:hover, .project-source-links .text-link:hover { border-color: var(--accent); background: #ff8b4d12; transform: translateY(-2px); }
   .text-link:hover svg, .text-link:hover > span, .button:not(:disabled):hover svg { transform: translate(2px, -2px); }
@@ -239,7 +240,7 @@ h1 { font-size: clamp(2.75rem, 4.5vw, 4rem); letter-spacing: -.055em; line-heigh
   .text-link:hover svg, .text-link:hover > span, .button:not(:disabled):hover,
   .button:not(:disabled):hover svg, .hero-socials a:hover, .contact-links a:hover, .contact-links a:hover svg { transform: none; }
   .portrait-card:hover { transform: rotate(2deg); }
-  .project-visual:hover .project-screenshot, .project-visual:focus-visible .project-screenshot { transform: rotate(-3deg); }
+  .project-visual:hover .project-screenshot, .project-visual:focus-visible .project-screenshot { transform: translateY(24px) rotate(-3deg); }
   .resume-drawer { animation: none; }
   .scroll-reveal .section-heading, .scroll-reveal .projects-grid > .project-card,
   .scroll-reveal .skills-layout, .scroll-reveal .skill-groups > .skill-group,

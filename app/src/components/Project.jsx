@@ -3,12 +3,12 @@ import Image from 'next/image';
 import { motion, useReducedMotion } from 'framer-motion';
 import { GitHubIcon } from './SocialIcons';
 
-export default function Project({ title, category, description, tags, src, linkUrl, sourceLinks = [] }) {
+export default function Project({ title, category, description, tags, src, visualClassName = '', linkUrl, sourceLinks = [] }) {
   const reduceMotion = useReducedMotion();
   const external = linkUrl.startsWith('https://');
   const linkProps = external ? { target: '_blank', rel: 'noopener noreferrer' } : {};
   return <motion.article className="project-card" initial={{ y: reduceMotion ? 0 : 38, scale: reduceMotion ? 1 : .985 }} whileInView={{ y: 0, scale: 1 }} viewport={{ once: true, amount: .18 }} transition={{ type: 'spring', stiffness: 240, damping: 14 }}>
-    <a className="project-visual" href={linkUrl} {...linkProps} aria-label={`View ${title}${external ? ' (opens in a new tab)' : ''}`}>
+    <a className={`project-visual ${visualClassName}`.trim()} href={linkUrl} {...linkProps} aria-label={`View ${title}${external ? ' (opens in a new tab)' : ''}`}>
       <span className="project-screenshot"><Image src={src} alt={`${title} project screenshot`} fill unoptimized sizes="(max-width: 700px) 90vw, 50vw" /></span>
       <span className="project-arrow" aria-hidden="true">↗</span>
     </a>

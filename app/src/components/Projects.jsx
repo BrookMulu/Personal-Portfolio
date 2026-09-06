@@ -14,6 +14,18 @@ const projects = [
     ],
   },
   {
+    title: 'Brook’s Financial Observatory',
+    category: 'Financial data platform · Full-stack application',
+    description: 'A responsive research dashboard for exploring company performance. Search public companies, compare annual or quarterly results, inspect revenue and profit trends, filter financial statements, and export visible data as CSV.',
+    tags: ['Next.js 15', 'React 19', 'JavaScript', 'Tailwind CSS', 'REST APIs', 'SVG Charts', 'CSV Export'],
+    src: '/images/financial-observatory.png',
+    visualClassName: 'project-visual--financial',
+    linkUrl: 'https://brooks-financial-observatory.vercel.app',
+    sourceLinks: [
+      { label: 'Source', href: 'https://github.com/BrookMulu/brooks-financial-observatory' },
+    ],
+  },
+  {
     title: 'Computer Science Society',
     category: 'Community website · Aug — Sep 2023',
     description: 'A shared home for the Computer Science Society. Built to help members connect, find resources, and keep up with club activities.',
