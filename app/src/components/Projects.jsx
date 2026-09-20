@@ -4,8 +4,8 @@ const projects = [
   {
     title: 'Pokédex Web Application',
     category: 'Full-stack application · Jan — Apr 2024',
-    description: 'Explore, search, sort, and filter Pokémon, then sign in with Google to build a persistent collection. Built with a Next.js frontend, Spring Boot REST services, and PostgreSQL, with Docker for containerization and R for preparing Pokémon datasets.',
-    tags: ['Next.js', 'JavaScript', 'Material UI', 'Java', 'Spring Boot', 'Spring MVC', 'PostgreSQL', 'Firebase Auth', 'Docker', 'R'],
+    description: 'A containerized full-stack Pokédex with searchable, sortable, and pageable Pokémon data. Built the Next.js interface and Spring Boot REST API around PostgreSQL models and JPA relationships, with CSV data prepared in R. Firebase email/password and Google sign-in secure user-specific capture workflows; Cloud Firestore supports username lookups.',
+    tags: ['Next.js', 'React', 'Java', 'Spring Boot', 'Spring MVC', 'PostgreSQL', 'JPA', 'Firebase Auth', 'Cloud Firestore', 'Docker', 'R'],
     src: '/images/pokedex-screenshot.png',
     linkUrl: 'https://github.com/BrookMulu/frontend-pokedex',
     sourceLinks: [
@@ -15,9 +15,9 @@ const projects = [
   },
   {
     title: 'Brook’s Financial Observatory',
-    category: 'Financial data platform · Full-stack application',
-    description: 'A responsive research dashboard for exploring company performance. Search public companies, compare annual or quarterly results, inspect revenue and profit trends, filter financial statements, and export visible data as CSV.',
-    tags: ['Next.js 15', 'React 19', 'JavaScript', 'Tailwind CSS', 'REST APIs', 'SVG Charts', 'CSV Export'],
+    category: 'Financial data platform · Aug — Sep 2026',
+    description: 'A financial analytics dashboard for exploring company performance through search, annual and quarterly statements, interactive charts, filters, and CSV exports. Built serverless REST APIs on Vercel with Financial Modeling Prep integration, input validation, secure API-key handling, caching, and error handling, plus eight automated tests. OpenAI Codex supported UI design and frontend development.',
+    tags: ['Next.js', 'React', 'JavaScript', 'CSS', 'Vercel', 'REST APIs', 'Financial Modeling Prep', 'CSV Export'],
     src: '/images/financial-observatory.png',
     visualClassName: 'project-visual--financial',
     linkUrl: 'https://brooks-financial-observatory.vercel.app',
